@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Capstone Routes</title>
+</head>
+<body>
+
+    <h1>The API Routes</h1>
+    <div class="home">
+        <div>
+            <h2>Home</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>HTTP Methods</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/</td>
+                    <td>Home page</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="users">
+        <div>
+            <h2>Users</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>HTTP Methods</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/users</td>
+                    <td>Gets all the users on the table</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/users/:id</td>
+                    <td>Gets a single user by using their userID</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/users/register</td>
+                    <td>Inserts a single user </td>
+                </tr>
+                <tr>
+                    <td>PATCH/PUT</td>
+                    <td>/users/update/:id</td>
+                    <td>Update user details by ID</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>/users/delete/:id</td>
+                    <td>Delete a user by ID</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="products">
+        <div>
+            <h2>Products</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>HTTP Methods</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/product</td>
+                    <td>Gets all the products from the table</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/product/:id</td>
+                    <td>Gets a single product by using the prodID</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/product/add</td>
+                    <td>Adds one product</td>
+                </tr>
+                <tr>
+                    <td>PATCH</td>
+                    <td>/product/update/:id</td>
+                    <td>Edits a single product by using the prodID</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>/product/delete/:id</td>
+                    <td>deletes a single product by using the prodID</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
