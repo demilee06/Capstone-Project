@@ -25,18 +25,20 @@ export default createStore({
   actions: {
     async getUsers({commit}){
       let data = await axios.get (`http://localhost:2023/users`)
-      let users = await data.json()
-      commit('setUsers',users)
+      console.log(data);
+      commit('setUsers',data)
     },
     async getUser({commit}){
       let data = await axios.get(`http://localhost:2023/users/:id`)
-      let users = await data.json()
-      commit('setUsers',users)
+      console.log(data);
+      
+      commit('setUsers',data)
     },
     async insertUser({commit},info){
       let data = await axios.post(`http://localhost:2023/users/insert`)
-      let users = await data.json()
-      commit('setUsers',users)
+      console.log(data);
+      
+      commit('setUsers',data)
     },
     async loginUser ({commit}){
       let {data} = await axios.post(`http://localhost:2023/users/login`)
@@ -46,19 +48,20 @@ export default createStore({
     },
     async updateUser({commit}){
       let data = await axios.patch(`http://localhost:2023/users/update/:id`)
-      let users = await data.json()
-      commit('setUsers',users)
+      console.log(data);
+      
+      commit('setUsers',data)
     },
     async deleteUser({commit}){
       let data = await axios.delete(`http://localhost:2023/users/update/:id`)
-      let users = await data.json()
-      commit('setUsers',users)
+      console.log(data);
+      
+      commit('setUsers',data)
     },
     async getProducts({commit}){
       let {data} = await axios.get(`http://localhost:2023/products`)
       console.log(data);
-      let products = await data.json()
-      commit('setProducts',products)
+      commit('setProducts',data)
     },
     async getProduct({commit}){
       let data = await axios.get(`http://localhost:2023/products/:id`)
@@ -67,17 +70,20 @@ export default createStore({
     },
     async addProduct ({commit}){
       let data = await axios.post(`http://localhost:2023/products/addProduct`)
-      let products = await data.json()
-      commit('setProducts',products)
+      console.log(data);
+      
+      commit('setProducts',data)
     },
     async updateProduct ({commit}){
       let data = await axios.patch(`http://localhost:2023/products/update/:id`)
-      let products = await data.json()
-      commit('setProducts',products)
+      console.log(data);
+      
+      commit('setProducts',data)
     },
     async deleteProduct ({commit}){
       let data = await axios.delete(`http://localhost:2023/products/delete/:id`)
-      let products = await data.json()
-      commit('setProducts',products)
+      console.log(data);
+      
+      commit('setProducts',data)
     },
 }})

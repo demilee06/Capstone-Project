@@ -1,19 +1,25 @@
 <template>
-
+<section>
+    <img class="img2" src="https://demilee06.github.io/Capstone-Images/products%20page%20img1.webp" alt="">
+</section>
+<br><br>
 <section>
     <card-comp></card-comp>
 </section>
 <div>
     <spinner-comp></spinner-comp>
 </div>
+
 </template>
 <script>
   import CardComp from '../components/CardComp.vue'
   import SpinnerComp from '@/components/SpinnerComp.vue';
+  
   export default {
   components: {
     CardComp,
-    SpinnerComp
+    SpinnerComp,
+
   },
   data() {
     return {
@@ -96,6 +102,10 @@ img {
     border-radius: 16px;
 }
 
+.img2{
+    width: 100%;
+    height: 50%
+}
 h3{
     text-align: center;
     font-size: 25px;
