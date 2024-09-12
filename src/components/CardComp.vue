@@ -15,8 +15,8 @@
             </div>
             <div class="card-footer">
                 <h3>{{ product.prodName }}</h3>
-            <p>{{ product.prodDes }}</p>
-            <h6>{{ product.amount }}</h6>
+               <p>{{ product.prodDes }}</p>
+               <h6>{{ product.amount }}</h6>
             </div>
 
             <button class="btn"> Buy Now

@@ -65,8 +65,9 @@ export default createStore({
     },
     async getProduct({commit}){
       let data = await axios.get(`http://localhost:2023/products/:id`)
-      // let products = await data.json()
-      // commit('setProducts',products)
+      console.log(data);
+      
+      commit('setProducts',data)
     },
     async addProduct ({commit}){
       let data = await axios.post(`http://localhost:2023/products/addProduct`)

@@ -29,19 +29,11 @@
   methods : {
       getProducts() {
           this.$store.dispatch('getProducts')
-        },
-        addToCart(){
-            this.$store.dispatch('addToCart')
-        },
-        // purchaseAlert(prodName) {
-        //     alert(`You have purchased ${prodName}`);
-        // },
-        filteredProducts() {
-            return this.$store.state.products
         }
     },
     mounted() {
-        this.getProducts()
+        // this.getProducts()
+        this.$store.dispatch('getProducts')
     }
   }
   

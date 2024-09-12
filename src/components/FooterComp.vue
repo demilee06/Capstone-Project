@@ -18,6 +18,8 @@ export default {
     name:'FooterComp'
 }
 </script>
-<style >
-    
+<style scoped>
+    .footer{
+        height:auto;
+    }
 </style>
