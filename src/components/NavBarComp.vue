@@ -37,7 +37,7 @@
                       <div class="offcanvas-body text-center">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3 f-3">
                           <li class="nav-item">
-                            <router-link class="nav-link" aria-current="page" to="/home"><button data-bs-dismiss="offcanvas" aria-label="Close">Home</button></router-link>
+                            <router-link class="nav-link" aria-current="page" to="/"><button data-bs-dismiss="offcanvas" aria-label="Close">Home</button></router-link>
                           </li>
                           <li class="nav-item">
                             <router-link class="nav-link" to="/about" aria-current="page"><button data-bs-dismiss="offcanvas" aria-label="Close">About</button></router-link>
